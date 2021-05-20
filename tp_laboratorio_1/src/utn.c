@@ -39,8 +39,10 @@ int utn_getInt(int* pEntero,char* mensaje,char* mensajeError)
 
 	if(pEntero != NULL && mensaje != NULL && mensajeError != NULL)
 	{
+
 		printf("%s",mensaje);
 		scanf("%d",pEntero);
+		fflush(stdin);
 		retorno = 1;
 	}
 	else

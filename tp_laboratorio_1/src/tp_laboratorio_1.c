@@ -40,8 +40,9 @@ int main(void) {
 
 	do
 	{
-		 printf("------------- Calculadora -------------\n1)Ingrese el primer numero.  (A=%.2f)\n2)Ingrese el segundo numero. (B=%.2f)\n3)Calcular las operaciones.\n4)Informa resultados.\n5)Salir.\n---------------------------------------\nOpcion: ",numero1,numero2);
-		 utn_getNumeroEntero(&opcion,"","Error", 2);
+		 printf("\n------------- Calculadora -------------\n1)Ingrese el primer numero.  (A=%.2f)\n2)Ingrese el segundo numero. (B=%.2f)\n3)Calcular las operaciones.\n4)Informa resultados.\n5)Salir.\n---------------------------------------\nOpcion: ",numero1,numero2);
+
+		 utn_getInt(&opcion," ","Error\n");
 
 		 switch(opcion)
 		{
@@ -120,6 +121,7 @@ int main(void) {
 
 		default:
 			printf("Ingresae una opcion valida. \n");
+			break;
 		}
 
 	}while(salir==0);
