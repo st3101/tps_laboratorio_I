@@ -1,9 +1,3 @@
-/*
- * utn.h
- *
- *  Created on: 15 abr. 2021
- *      Author: santi
- */
 #define SRC_UTN_H_
 //menu
 
@@ -39,6 +33,4 @@ int utn_getStringEntreOpciones2(char* string,char* opcion1,char* opcion2,char* m
 int utn_getStringEntreOpciones3(char* string,char* opcion1,char* opcion2, char* opcion3,char* mensaje,char* mensajeError,int reintentos);
 int utn_getStringConMaximoCaracteres(char* string,char* mensaje,char* mensajeError,int cantidadCaracteres, int reitnetos);
 int utn_getSoloStringConMaximoCaracteres(char* string,char* mensaje,char* mensajeError,int cantidadCaracteres,int reintentos);
-
-
 
